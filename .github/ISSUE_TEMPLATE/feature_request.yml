@@ -83,7 +83,7 @@ body:
     attributes:
       label: AWS .NET SDK and/or Package version used
       description: PowerShell Packages used
-      placeholder: AWS.S3. 4.1.53
+      placeholder: AWS.S3 4.1.53
     validations:
       required: true
 

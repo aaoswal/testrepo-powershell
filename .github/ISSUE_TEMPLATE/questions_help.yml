@@ -1,0 +1,69 @@
+name: "\U0001F4AC Questions/Help"
+description: Ask a question! If you don't know which type to choose, choose this one.
+title: "(short issue description)"
+labels: [guidance, needs-triage]
+body: 
+  - type: markdown 
+    attributes: 
+      value: |
+        ## Important Information
+        Please make sure you have gone through the <b>Existing Issues, Official Docs and AWS Forums</b> before filing a new issue! If your question was already asked, but the answer does not satisfy your curiosity, prefer re-opening the existing issue to ask for further clarification, instead of filing a new issue.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: The Question
+      description: Ask your question here. Include any relevant details. Make sure you are not falling prey to the [X/Y problem](http://xyproblem.info)!
+      placeholder: Question
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: |
+        Provide a self-contained, concise snippet of code that can be used to reproduce the issue.
+        For more complex issues provide a repo with the smallest reproducible example.
+        Avoid including business logic or unrelated code, it makes diagnosis more difficult.
+      placeholder: Reproduction Steps
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior
+      description: |
+        Tell us what happens instead of the expected behavior.
+        Include full errors, uncaught exceptions, stack traces, and relevant logs.
+      placeholder: Current behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: dotnet-sdk-version
+    attributes:
+      label: AWS .NET SDK and/or Package version used
+      description: NuGet Packages used
+      placeholder: AWSSDK.S3 3.7.8.13
+    validations:
+      required: true
+
+  - type: input
+    id: platform-used
+    attributes:
+      label: Targeted .NET Platform
+      description: "Example: .NET Framework 4.7, .NET Core 3.1, .NET 6, etc."
+      placeholder: .NET Framework 4.7, .NET Core 3.1, .NET 6, etc.
+    validations:
+      required: true
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating System and version
+      description: "Example: Windows 10, OSX Mojave, Ubuntu, AmazonLinux, etc."
+      placeholder: Windows 10, OSX Mojave, Ubuntu, AmazonLinux, etc.
+    validations:
+      required: true

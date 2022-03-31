@@ -37,7 +37,7 @@ body:
       description: |
         Tell us what happens instead of the expected behavior.
         Include full errors, uncaught exceptions, stack traces, and relevant logs.
-      placeholder: Current behaviour
+      placeholder: Current behavior
     validations:
       required: true
 
